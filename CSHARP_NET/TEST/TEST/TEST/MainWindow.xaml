@@ -1,0 +1,40 @@
+﻿<Window x:Name="ZJYC" x:Class="TEST.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TEST"
+        mc:Ignorable="d"
+        Title="ZJYC" Height="450" Width="800" FontSize="20" FontWeight="Bold" FontFamily="Consolas" MaxWidth="800" MaxHeight="450" MinWidth="800" MinHeight="450">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="73*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0.554"/>
+                <GradientStop Color="#FF040525" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="95" Height="37" Click="Button_Click" Foreground="#FF91EC0E">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FF040A47" Offset="1"/>
+                    <GradientStop Color="#FF1024EC" Offset="0.034"/>
+                    <GradientStop Color="#FFF0410D" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="TextMain" HorizontalAlignment="Left" Height="170" Margin="125,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="645" FontFamily="Consolas" FontSize="22" FontWeight="Bold" FontStyle="Italic" Foreground="#FFF1DC08" Grid.ColumnSpan="2" SelectionBrush="#FF3EF00A">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF8608F0" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+
+    </Grid>
+</Window>
